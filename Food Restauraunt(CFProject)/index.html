@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pakistani Culinary Delight</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <section class="header">
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>
+      <h3>Pakistani Culinary Haven</h3>
+    </a>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#food">Cuisine</a>
+      <a href="#menu">Menu</a>
+      <a href="./reservation.html" target="_blank">Reservation</a>
+      <a href="./order.html">Order</a>
+    </div>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+  </section>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide" style="background: url(./banner1.jpg) no-repeat;">
+          <div class="content">
+            <span>Authentic Pakistani Taste</span>
+            <h3>Biryani & Beyond</h3>
+            <a href="#" class="btn">Discover More</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide" style="background: url(./banner3.jpg) no-repeat;">
+          <div class="content">
+            <span>Traditional Breakfast</span>
+            <h3>Halwa Puri Perfection</h3>
+            <a href="#" class="btn">Explore Dishes</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide slide" style="background: url(./banner2.jpg) no-repeat;">
+          <div class="content">
+            <span>Evening Delights</span>
+            <h3>Seekh Kabab Sizzlers</h3>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="image">
+      <img src="./about.jpg" alt="Pakistani Cuisine">
+    </div>
+    <div class="content">
+      <h3 class="title">Welcome to Pakistani Culinary Delight</h3>
+      <p>Indulge in the rich heritage of Pakistani cuisine, crafted with authentic recipes passed down through
+        generations. From the spicy curries of Punjab to the savory delights of Sindh, every bite tells a story.</p>
+      <a href="#" class="btn">Learn More</a>
+      <div class="icons-container">
+        <div class="icons">
+          <img src="./cooking.png" alt="">
+          <h3>Authentic Recipes</h3>
+        </div>
+        <div class="icons">
+          <img src="./margarita.png" alt="">
+          <h3>Refreshing Drinks</h3>
+        </div>
+        <div class="icons">
+          <img src="./chef.png" alt="">
+          <h3>Skilled Chefs</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Section -->
+  <section class="food" id="food">
+    <div class="heading">
+      <span>Popular Dishes</span>
+      <h3>Explore Our Specialties</h3>
+    </div>
+
+    <div class="swiper food-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide" data-name="food-1">
+          <img src="./15s.jpg" alt="Chicken Karahi">
+          <h3>Chicken Karahi</h3>
+          <div class="price">PKR 1,200</div>
+        </div>
+        <div class="swiper-slide slide" data-name="food-2">
+          <img src="./13s.jpg" alt="Nihari">
+          <h3>Beef Nihari</h3>
+          <div class="price">PKR 900</div>
+        </div>
+        <div class="swiper-slide slide" data-name="food-3">
+          <img src="./11s.jpg" alt="Seekh Kabab">
+          <h3>Seekh Kabab</h3>
+          <div class="price">PKR 800</div>
+        </div>
+        <div class="swiper-slide slide" data-name="food-4">
+          <img src="./12s.jpg" alt="Halwa Puri">
+          <h3>Halwa Puri</h3>
+          <div class="price">PKR 400</div>
+        </div>
+        <div class="swiper-slide slide" data-name="food-5">
+          <img src="./14s.jpg" alt="Lassi">
+          <h3>Sweet Lassi</h3>
+          <div class="price">PKR 200</div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Food Preview Section -->
+  <section class="food-preview-container">
+    <div id="close-preview" class="fas fa-times"></div>
+    <div class="food-preview" data-target="food-1">
+      <img src="./15s.jpg" alt="Chicken Karahi">
+      <h3>Chicken Karahi</h3>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>A mouthwatering traditional chicken dish cooked with fresh spices and tomatoes.</p>
+      <div class="price">PKR 1,200</div>
+      <a href="./order.html" class="btn">Order Now</a>
+    </div>
+    <div class="food-preview" data-target="food-2">
+      <img src="./13s.jpg" alt="Beef Nihari">
+      <h3>Beef Nihari</h3>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>A mouthwatering traditional beef dish cooked with rural spices .</p>
+      <div class="price">PKR 900</div>
+      <a href="./order.html" class="btn">Order Now</a>
+    </div>
+    <div class="food-preview" data-target="food-3">
+      <img src="./11s.jpg" alt="Seekh Kabab">
+      <h3>Seekh Kabab</h3>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>Mixture of fresh extracted spices in meet</p>
+      <div class="price">PKR 800</div>
+      <a href="./order.html" class="btn">Order Now</a>
+    </div>
+    <div class="food-preview" data-target="food-4">
+      <img src="./12s.jpg" alt="Halwa Puri">
+      <h3>Halwa Puri</h3>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>Fresh and flavour-full chana and tarkari with freshly made Puri.</p>
+      <div class="price">PKR 400</div>
+      <a href="./order.html" class="btn">Order Now</a>
+    </div>
+    <div class="food-preview" data-target="food-5">
+      <img src="./14s.jpg" alt="Sweet Lassi">
+      <h3>Sweet Lassi</h3>
+      <div class="stars">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+      <p>Blend of fresh greek yougurt with a hint of dryfruits.</p>
+      <div class="price">PKR 200</div>
+      <a href="./order.html" class="btn">Order Now</a>
+    </div>
+  </section>
+</body>
+
+</html>
+
+
+<!-- menu section Starts -->
+
+<section class="menu" id="menu">
+
+
+  <div class="heading">
+    <span>Our Menu</span>
+    <h3>Our Popular Dishes</h3>
+  </div>
+
+  <div class="swiper menu-slider">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide">
+        <h3 class="title">Breakfast</h3>
+        <div class="box-container">
+          <div class="box">
+            <div class="info">
+              <h3>Halwa Puri</h3>
+              <p>Traditional deep-fried bread served with sweet semolina halwa and chickpea.</p>
+            </div>
+            <div class="price">RS250</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Anda Paratha</h3>
+              <p>A hearty stuffed paratha filled with seasoned scrambled eggs, perfect for a fulfilling start to the
+                day.
+              </p>
+            </div>
+            <div class="price">RS200</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Nihari with Naan</h3>
+              <p>A rich and flavorful slow-cooked beef stew served with warm naan bread..</p>
+            </div>
+            <div class="price">RS500</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Pakistani Omelette</h3>
+              <p>A spicy and savory omelette infused with chopped onions, tomatoes, and green chilies.</p>
+            </div>
+            <div class="price">RS150</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Spanish Omelette</h3>
+              <p> A classic Spanish dish made with eggs, potatoes, and onions for a wholesome meal.</p>
+            </div>
+            <div class="price">RS350</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Porridge and Oats</h3>
+              <p>A healthy and creamy bowl of oats served with your choice of fruits and nuts.</p>
+            </div>
+            <div class="price">RS250</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <h3 class="title">Lunch</h3>
+        <div class="box-container">
+          <div class="box">
+            <div class="info">
+              <h3>Chicken Biryani</h3>
+              <p>Aromatic rice layered with spiced chicken and garnished with fried onions.</p>
+            </div>
+            <div class="price">PKR 500</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Beef Karahi</h3>
+              <p>A tomato-based curry with tender beef, cooked in a wok with spices and ginger.</p>
+            </div>
+            <div class="price">PKR 1200</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Palak Paneer</h3>
+              <p>Spinach and cottage cheese curry, served with steamed rice or flatbread.</p>
+            </div>
+            <div class="price">PKR 400</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Dal Tadka</h3>
+              <p>Yellow lentils tempered with spices, enjoyed with basmati rice.</p>
+            </div>
+            <div class="price">PKR 350</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Keema Naan</h3>
+              <p>Naan bread stuffed with spicy minced meat, baked in a tandoor.</p>
+            </div>
+            <div class="price">PKR 250</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Chicken Korma</h3>
+              <p>Rich, creamy curry with chicken and aromatic spices, perfect for a hearty lunch.</p>
+            </div>
+            <div class="price">PKR 900</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide slide">
+        <h3 class="title">Dinner</h3>
+        <div class="box-container">
+          <div class="box">
+            <div class="info">
+              <h3>Mutton Handi</h3>
+              <p>Slow-cooked mutton in a creamy tomato and yogurt-based gravy, seasoned with traditional spices.</p>
+            </div>
+            <div class="price">PKR 1600</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Chicken Karahi</h3>
+              <p>Rich, spiced chicken curry cooked in a wok, garnished with fresh coriander and ginger.</p>
+            </div>
+            <div class="price">PKR 1200</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Beef Nihari</h3>
+              <p>A slow-cooked beef stew, spiced with garam masala and served with naan or paratha.</p>
+            </div>
+            <div class="price">PKR 1300</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Grilled Fish</h3>
+              <p>Fresh fish marinated in tangy spices, grilled to perfection, and served with a side of salad.</p>
+            </div>
+            <div class="price">PKR 800</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Paneer Butter Masala</h3>
+              <p>Cubes of cottage cheese in a rich and creamy tomato-based gravy, perfect for vegetarians.</p>
+            </div>
+            <div class="price">PKR 600</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Seekh Kebabs</h3>
+              <p>Minced meat kebabs seasoned with herbs and spices, grilled over a charcoal flame.</p>
+            </div>
+            <div class="price">PKR 500</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <h3 class="title">Drinks</h3>
+        <div class="box-container">
+          <div class="box">
+            <div class="info">
+              <h3>Mango Lassi</h3>
+              <p>A refreshing blend of yogurt, ripe mangoes, and sugar, topped with a hint of cardamom.</p>
+            </div>
+            <div class="price">PKR 250</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Mint Lemonade</h3>
+              <p>A cool and zesty mix of fresh mint leaves, lemon juice, and soda water, perfect for hot days.</p>
+            </div>
+            <div class="price">PKR 180</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Masala Chai</h3>
+              <p>Traditional spiced tea made with a blend of black tea, milk, and aromatic spices.</p>
+            </div>
+            <div class="price">PKR 120</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Cold Coffee</h3>
+              <p>A creamy and chilled coffee beverage with a touch of chocolate syrup for extra flavor.</p>
+            </div>
+            <div class="price">PKR 200</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Soft Drinks</h3>
+              <p>A variety of chilled fizzy beverages including cola, lemon, and orange flavors.</p>
+            </div>
+            <div class="price">PKR 100</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Fresh Orange Juice</h3>
+              <p>Pure and fresh orange juice, squeezed to order for a healthy and energizing drink.</p>
+            </div>
+            <div class="price">PKR 300</div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide slide">
+        <h3 class="title">Desserts</h3>
+        <div class="box-container">
+          <div class="box">
+            <div class="info">
+              <h3>Gulab Jamun</h3>
+              <p>Traditional sweet dumplings made of khoya, deep-fried and soaked in sugar syrup flavored with cardamom.
+              </p>
+            </div>
+            <div class="price">PKR 150</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Kheer</h3>
+              <p>Rich and creamy rice pudding cooked with milk, sugar, and a touch of saffron, garnished with nuts.</p>
+            </div>
+            <div class="price">PKR 200</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Chocolate Fudge Cake</h3>
+              <p>A moist and decadent chocolate cake layered with rich chocolate fudge, perfect for chocolate lovers.
+              </p>
+            </div>
+            <div class="price">PKR 400</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Fruit Custard</h3>
+              <p>A refreshing mix of seasonal fruits in creamy custard, lightly sweetened for a balanced taste.</p>
+            </div>
+            <div class="price">PKR 250</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Baklava</h3>
+              <p>A rich Middle Eastern dessert with layers of flaky pastry, nuts, and sweet syrup.</p>
+            </div>
+            <div class="price">PKR 300</div>
+          </div>
+          <div class="box">
+            <div class="info">
+              <h3>Ice Cream Sundae</h3>
+              <p>A delightful combination of creamy ice cream, chocolate sauce, whipped cream, and cherry on top.</p>
+            </div>
+            <div class="price">PKR 350</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</section>
+
+<!-- menu section ends -->
+<!-- order section starts -->
+
+<section id="order" class="order">
+  <div class="heading">
+    <span>Order Now</span>
+    <h3>Special Services</h3>
+  </div>
+
+  <form id="infoForm">
+    <div class="box-container">
+      <div class="box">
+        <div class="inputBox">
+          <span>Full Name</span>
+          <input type="text" placeholder="Enter Your Name" id="name">
+        </div>
+        <div class="inputBox">
+          <span>Food Name</span>
+          <input type="text" placeholder="Enter the meal you want" id="foodName">
+        </div>
+        <div class="inputBox">
+          <span>Order Details</span>
+          <input type="text" placeholder="Specific with food" id="Details">
+        </div>
+        <div class="inputBox">
+          <span>Your Address</span>
+          <textarea id="Address" name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="box">
+        <div class="inputBox">
+          <span>Number</span>
+          <input type="number" placeholder="Enter Your Number" id="number">
+        </div>
+        <div class="inputBox">
+          <span>Quantity</span>
+          <input type="text" placeholder="Enter the number of meal" id="quantity">
+        </div>
+        <div class="inputBox">
+          <span>Date</span>
+          <input type="datetime-local" id="date">
+        </div>
+        <div class="inputBox">
+          <span>Our Address</span>
+          <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.4516956358!2d-88.06161527413067!3d41.83377338289125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2s!4v1735274278272!5m2!1sen!2s"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <input type="submit" value="order now" class="btn">
+  </form>
+  <!-- pop up message -->
+  <div class="popup" id="popup">
+    <h2>Order Confirmed!</h2>
+    <p id="popupMessage"></p>
+    <div class="choice">
+      <button onclick="closePopup()" id="closePopup">Close</button>
+      <a href="./order.html" id="payment">Proceed to Payment</a>
+    </div>
+
+
+  </div>
+
+</section>
+<!-- order section ends -->
+
+<!-- footer section starts -->
+<section class="footer">
+  <div class="icons-container">
+    <div class="icons">
+      <i class="fas fa-clock"></i>
+      <h3>openning hours</h3>
+      <p>08:00am to 10:00pm</p>
+    </div>
+    <div class="icons">
+      <i class="fas fa-phone"></i>
+      <h3>phone</h3>
+      <p>+92-336-012345</p>
+      <p>+92-336-655857</p>
+    </div>
+    <div class="icons">
+      <i class="fas fa-envelope"></i>
+      <h3>email</h3>
+      <p>itachi15@gmail.com</p>
+      <p>rafey19@gmail.com</p>
+    </div>
+    <div class="icons">
+      <i class="fas fa-map"></i>
+      <h3>address</h3>
+      <p>Tokyo,Japan - 02513</p>
+    </div>
+  </div>
+  <div class="share">
+    <a href="" class="fa-brands fa-facebook"></a>
+    <a href="" class="fa-brands fa-twitter"></a>
+    <a href="" class="fa-brands fa-instagram"></a>
+    <a href="" class="fa-brands fa-linkedin"></a>
+  </div>
+
+  <div class="credit">Created By <span>Mr. Muhammad Bisman</span>,<span>Rafey Siddiqi</span>|all rights reserved!|
+  </div>
+</section>
+<!-- footer section ends -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+</body>
+
+</html>

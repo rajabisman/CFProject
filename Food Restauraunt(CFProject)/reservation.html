@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar start -->
+    <div class="streaming-nav">
+        <h3>Welcome to our Reservation Page! Enjoy seamless bookings and an unforgettable dining experience. </h3>
+    </div>
+
+    <section>
+        <div class="headern">
+            <div class="left-nav">
+                <i class="fas fa-utensils"></i>
+                <h3 style="display: inline-block; text-decoration: none;">Pakistani Culinary Haven</h3>
+            </div>
+            <div class="navbar">
+                <a href="./index.html">Home</a>
+                <a href="./index.html">Cuisine</a>
+                <a href="./index.html">About</a>
+                <a href="./index.html">Reservation</a>
+                <a href="./index.html">Menu</a>
+                <a href="./index.html">Order</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- navbar ends -->
+    <div class="length" style="background-image: url(./cover.jpg); background-size: cover;">
+        <div class="container">
+            <div class="header">
+                <h1>Reserve Your Table</h1>
+                <p id="available-tables">Available Tables: 10</p>
+            </div>
+
+            <form id="reservation-form" class="reservation-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required placeholder="John Doe">
+
+                <label for="number">Phone Number</label>
+                <input type="text" id="number" required placeholder="123-456-7890">
+
+                <label for="time">Reservation Time</label>
+                <input type="datetime-local" id="time" required>
+
+                <button type="submit">Reserve</button>
+            </form>
+
+            <div id="slip" class="slip hidden">
+                <h2>Reservation Details</h2>
+                <p><strong>Name:</strong> <span id="slip-name"></span></p>
+                <p><strong>Phone:</strong> <span id="slip-number"></span></p>
+                <p><strong>Time:</strong> <span id="slip-time"></span></p>
+                <p><strong>Table Number:</strong> <span id="slip-table"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="reservation.js"></script>
+</body>
+
+</html>
